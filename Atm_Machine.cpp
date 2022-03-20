@@ -59,6 +59,8 @@ public:
         int a, available_balance;
         cout <<"Enter amount to Withdraw \n";
         cin >> a;
+        
+        //Condition To Check Whether Account have The Amount to be withdraw or not 
         if(total < a)
         {
             cout<<"Insufficient Balance ";
@@ -70,8 +72,10 @@ public:
         cout << "Availabel balance is " << available_balance;
         total = available_balance;
     }
-};
+}; // Bank Class End Here
 
+
+//Code Will Start Run From Here 
 int main()
 {
     Bank b; // Object of Bank Class
